@@ -45,19 +45,19 @@
 
         </div>
 
-        <form action="">
+        <form #form="ngForm" (ngSubmit)="sendMail(form)" (keydown.enter)="sendMail(form)">
 
             <div class="inputBox">
-                <input type="text" placeholder="Seu nome">
-                <input type="number" placeholder="Seu número">
+                <input type="text" placeholder="*Seu nome" name="name" ngModel required #name="ngModel">
+                <input type="tel" placeholder="Seu número" name="telephone" ngModel #telephone="ngModel" mask="(00) 0 0000-0000">
             </div>
 
             <div class="inputBox">
-                <input type="email" placeholder="Seu email">
-                <input type="text" placeholder="Assunto">
+                <input type="email" placeholder="*Seu email" name="_replyto" ngModel required #_replyto="ngModel">
+                <input type="text" placeholder="*Assunto" name="_subject" ngModel required #_subject="ngModel">
             </div>
 
-            <textarea name="" placeholder="Mensagem" id="" cols="30" rows="10"></textarea>
+            <textarea name="complaint" placeholder="Mensagem" cols="30" rows="10" ngModel required #complaint="ngModel"></textarea>
 
             <button type="submit" class="btn"> 
                 Enviar mensagem 

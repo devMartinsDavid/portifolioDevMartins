@@ -10,7 +10,6 @@ import { ControllerBase } from './controller/controller.base';
   animations: [ slideInLayoutAnimation ]
 })
 export class AppComponent extends ControllerBase {
-  title = 'dev-rbl';
 
   constructor() {
     super();
@@ -22,5 +21,9 @@ export class AppComponent extends ControllerBase {
   
   prepareRoute(outlet: RouterOutlet) {
     return outlet.activatedRouteData.animation;
+  }
+
+  scrollTop(){
+    window.scrollTo(0, 0);
   }
 }

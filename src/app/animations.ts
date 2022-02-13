@@ -17,12 +17,12 @@ export const slideInLayoutAnimation =
                     width: '100%',
                     opacity: 0,
                 })
-            ]),
+            ], { optional: true }),
             query(':enter', [
-                animate('1000ms ease', 
+                animate('2000ms ease', 
                     style({ opacity: 1 })
                 )
-            ])
+            ], { optional: true })
         ])
     ]);
 
