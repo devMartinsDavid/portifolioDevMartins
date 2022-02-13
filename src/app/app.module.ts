@@ -7,7 +7,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // Locale PT-BR
 import localePtBR from '@angular/common/locales/pt';
-import { registerLocaleData } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy, registerLocaleData } from '@angular/common';
 registerLocaleData(localePtBR);
 
 import { AppRoutingModule } from './app-routing.module';
@@ -35,6 +35,7 @@ import { HomeComponent } from './pages/home/home.component';
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'pt-BR' },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
