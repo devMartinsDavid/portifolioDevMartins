@@ -15,9 +15,7 @@ export class AppComponent extends ControllerBase {
     super();
   }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
   
   prepareRoute(outlet: RouterOutlet) {
     return outlet.activatedRouteData.animation;
