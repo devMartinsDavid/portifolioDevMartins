@@ -13,7 +13,7 @@ export class BlogsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.title.setTitle('DevRbl | Blogs');
+    this.title.setTitle('DevMartins | Blogs');
   }
 
 }

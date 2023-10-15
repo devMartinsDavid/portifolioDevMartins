@@ -17,10 +17,10 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     const dataAtual = new Date();
     
-    this.yearsProgramation = dataAtual.getFullYear() - 2019;
-    this.yearBirth = dataAtual.getFullYear() - 1999;
+    this.yearsProgramation = dataAtual.getFullYear() - 2022;
+    this.yearBirth = dataAtual.getFullYear() - 2000;
     
-    this.title.setTitle('DevRbl | Sobre');
+    this.title.setTitle('DevMartins | Sobre');
   }
 
 }

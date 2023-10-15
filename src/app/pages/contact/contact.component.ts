@@ -25,7 +25,7 @@ export class ContactComponent extends ControllerBase {
   }
 
   ngOnInit(): void {
-    this.title.setTitle('DevRbl | Contato');
+    this.title.setTitle('DevMartins | Contato');
   }
 
   sendMail(form: NgForm): any{
