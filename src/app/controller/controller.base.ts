@@ -39,12 +39,12 @@ export class ControllerBase implements OnInit, AfterContentInit, AfterViewInit, 
         }
         
         if(hour < 8) {
-            return "Uma Ótimo Dia!";
+            return "Um Ótimo Dia!";
         }
     
         
         if(hour < 12) {
-            return "Uma Ótimo Dia!";
+            return "Um Ótimo Dia!";
         }
     
         if(hour < 18) {

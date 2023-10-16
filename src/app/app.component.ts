@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { slideInLayoutAnimation } from './animations';
 import { ControllerBase } from './controller/controller.base';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
