@@ -1,3 +1,4 @@
+import { Title } from '@angular/platform-browser';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
@@ -23,7 +24,7 @@ describe('AppComponent', () => {
   it(`should have as title 'DevMartins'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.prepareRoute).toEqual('DevMartins');
+    expect(app.ngOnChanges).toEqual('DevMartins');
   });
 
   it('should render title', () => {
